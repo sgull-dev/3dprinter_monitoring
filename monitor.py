@@ -1,11 +1,14 @@
 import pygame
 import pygame.camera
 import time
+import os
 import schedule
 import asyncio
 from telegram.ext import ApplicationBuilder
 from datetime import datetime
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 class PrinterMonitor:
     def __init__(self, token, chat_id, camera_id=0):
